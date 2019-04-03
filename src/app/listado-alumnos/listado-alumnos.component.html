@@ -1,0 +1,28 @@
+<p>
+  listado-alumnos works!
+</p>
+<h3>Listado de Alumnos</h3>
+<div *ngIf="arrayAlumnos.length > 0">
+  <table>
+    <tr>
+      <th>Nombre </th>
+      <th>Horas</th>
+      <th>Teléfono</th>
+      <th>Email</th>
+    </tr>
+    <tr *ngFor="let alumno of arrayAlumnos" >
+      <!-- <td (mouseover)="detalleEquipo(equipo)" (mouseout)="detalleEquipo(null)">{{equipo.nombre | uppercase }}</td>
+      -->
+      <td>{{alumno.nombre}}</td>
+      <td>{{alumno.apellidos}}</td>
+      <td>{{alumno.telefono}}</td>
+      <td>{{alumno.email}}</td>
+      <!-- <td (click)="deleteEquipo(equipo)">Delete</td> -->
+    </tr>
+  </table>
+
+  public id: number,
+  public nombre: string,
+  public apellidos: string,
+  public telefono: string,
+  public email: string) {}

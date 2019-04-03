@@ -1,0 +1,23 @@
+<p>
+  main works!
+</p>
+
+<h3>Form Alumnos</h3>
+<form [formGroup]="frmAlumnos">
+    <input type="text" placeholder="Nombre" formControlName="nombreAlumno">
+    <br>
+    <input type="text" placeholder="Apellidos" formControlName="apellidosAlumno">
+    <br>
+    <input type="number" placeholder="Teléfono" formControlName="telefonoAlumno">
+    <br>
+    <input type="text" placeholder="Email" formControlName="emailAlumno">
+</form>
+<button (click)="addAlumno()">Añadir Alumno</button>
+
+<h3>Form Cursos</h3>
+<form [formGroup]="frmCursos">
+    <input type="text" placeholder="Nombre curso" formControlName="nombreCurso">
+    <br>
+    <input type="number" placeholder="Horas" formControlName="horasCurso">
+</form>
+<button (click)="addCurso()">Añadir Curso</button>
